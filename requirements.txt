@@ -1,0 +1,4 @@
+Flask
+gunicorn
+pytest
+bert-extractive-summarizer
