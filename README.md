@@ -6,6 +6,9 @@ through REST, but for the purpose of this challenge, it doesn't
 (in this imaginary scenario, I'm processing something inside the
 service).
 
+PLEASE NOTE: I was unable to test this locally so all the testing is
+done by Travis
+
 # Improvements
 
 	- as far as I understood, the downloaded content
