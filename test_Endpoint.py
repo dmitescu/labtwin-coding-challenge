@@ -13,7 +13,7 @@ def test_wrong_ct(client):
     r = client.post("/process")
     assert r.status_code == 400
 
-def test_processed(client)
+def test_processed(client):
     r = client.post(
         "/process",
         data=json.dumps({"body": TEST_BODY})
