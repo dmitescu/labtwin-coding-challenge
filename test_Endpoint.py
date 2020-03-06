@@ -16,7 +16,7 @@ def test_wrong_ct(client):
 def test_processed(client):
     r = client.post(
         "/process",
-        data=json.dumps({"body": TEST_BODY})
+        data=json.dumps({"body": TEST_BODY}),
         content_type="application/json")
     json_body = json.loads(r.data)
     assert r.status_code == 200
