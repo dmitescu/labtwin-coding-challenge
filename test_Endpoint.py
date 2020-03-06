@@ -3,7 +3,8 @@ from Endpoint import app
 
 import json
 
-TEST_BODY = "I am a cat. I bite and scratch. I sometimes meow."
+TEST_BODY = "I am a cat. I sometimes meow and purr. Other times I scratch."
+TEST_SUMMARY = "I am a cat. Other times I scratch."
 
 @pytest.fixture
 def client():
@@ -21,4 +22,4 @@ def test_processed(client):
     json_body = json.loads(r.data)
     assert r.status_code == 200
     assert "summary" in json_body.keys()
-    assert json_body["summary"] == "processed"
+    assert json_body["summary"] == TEST_SUMMARY

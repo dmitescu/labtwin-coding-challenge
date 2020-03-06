@@ -2,3 +2,4 @@ Flask
 gunicorn
 pytest
 bert-extractive-summarizer
+torch==1.0.1
