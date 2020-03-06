@@ -35,3 +35,7 @@ def process():
     response = Response(json.dumps({"summary": summary}))
     response.content_type = "application/json"
     return response
+
+@app.route("/health", methods=['GET'])
+def health():
+    return Response(status=200)

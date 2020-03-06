@@ -21,11 +21,11 @@ done by Travis
 To build:
 
 ```
-docker build . -t labtwin
+docker build . -t labtwin:1.0
 ```
 
 To run:
 
 ```
-docker run -dit -p 8000:8000 labtwin --name labtwin
+docker run -dit -p 8000:8000 labtwin:1.0 --name labtwin
 ```
