@@ -3,9 +3,6 @@ from flask import request
 
 from werkzeug.middleware.proxy_fix import ProxyFix
 
-from ProcessingRequest import ProcessingRequest
-from BERTRequest import BERTRequest
-
 import json
 
 app = Flask(__name__)
