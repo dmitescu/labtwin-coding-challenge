@@ -21,4 +21,4 @@ def test_processed(client):
     json_body = json.loads(r.data)
     assert r.status_code == 200
     assert "summary" in json_body.keys()
-    assert json_body["summary"] === "processed"
+    assert json_body["summary"] == "processed"
