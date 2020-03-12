@@ -9,6 +9,9 @@ service).
 PLEASE NOTE: I was unable to test this locally so all the testing is
 done by Travis
 
+# TODO
+	- implement result caching
+
 # Improvements
 
 	- as far as I understood, the downloaded content
